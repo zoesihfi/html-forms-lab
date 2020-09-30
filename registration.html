@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>Registration Form</h1>
+<h1>Babysitter Registration Form</h1>
 
 <form action="registration.html">
   <label for="fname">First name:</label>
@@ -36,24 +36,33 @@
   <input type="text" id="zip" name="zip">
   <br>
   
-  
-  
-  
-  
-  
-  
-  
-  <label for="age">How old are you?:</label>
-
-<select name="age" id="age">
-  <option value="18">18</option>
-  <option value="19-25">19-25</option>
-  <option value="26-38">26-38</option>
-  <option value="39+">39+</option>
+<label for="lang">Preferred Language</label>
+<select name="lang" id="lang">
+    <option value="english">English</option>
+    <option value="spanish">Spanish</option>
 </select>
 
 <br>
-<label for="question">I have siblings:</label>
-<input type="checkbox" id="question" name="no" value="no">
-  <button type="submit" value="Submit">Submit</button>
+<label>Add-On Services:</label>
+<input type="checkbox" id="food" name="food" value="food">
+<label for="food">I would like your serives to provide food for my child.</label>
+<br>
+<input type="checkbox" id="diapers" name="diapers" value="diapers">
+<label for="diapers">I would like your serives to provide diapers for my child.</label>
+<br>
+<input type="checkbox" id="seating" name="seating" value="seating">
+<label for="seating">I would like your services to provide special seating to accomodate my child.</label>
+<br>
+<label for="date">Date Requested:</label>
+<input type="text" id="date" name="date">
+<br>
+
+<label for="time">Preferred Time of Day:</label>
+<select name="time" id="time">
+    <option value="morning">Morning 9:00am - 11:00am</option>
+    <option value="afternoon">Afternoon 12:00am - 3:00pm</option>
+    <option value="evening">Early Evening 4:00pm - 7:00pm</option>
+</select>
+
+  <button type="submit" value="Submit" ><a href="conformation-page.html">Submit</a></button>
 </form>
